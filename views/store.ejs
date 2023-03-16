@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include ('templates/head') %>
+  </head>
+  <script type="text/javascript" src="/js/confirm.js"></script>
+  <body>
+    <%- include ('templates/nav') %>
+    <div class="manage">
+      <h1>分配循環杯至店家</h1>
+      <div class="manage__title">  
+        <form action="/storeChoose" method="POST" class="manage__add">
+          <div class="item" >
+            <select style="width:200px;" name="storeName">
+              <option value="no" selected disabled hidden>請選擇店家</option>
+              <% var options = []; %>
+              <% for(var i = 0; i < storeList.length; i++) { %>
+                <option value='<%= storeList[i] %>'><%= storeList[i] %></option>
+              <% } %>
+            </select>
+          </div>
+          <div class="post__btn">
+            <button type="submit">確認</button>
+            </div>
+        </form>
+      </div>
+    </div>
+    <%- include ('templates/footer') %>
+  </body>
+</html>

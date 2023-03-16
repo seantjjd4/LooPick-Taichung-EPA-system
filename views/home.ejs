@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include ('templates/head') %>
+  </head>
+
+  <body>
+    <%- include ('templates/nav') %>
+    <div class="manage">
+      <h1>管理後台</h1>
+      
+      <p class="explain">歡迎使用管理介面~</p>
+      
+      <div class="manage__board">
+        
+        <a class="manage__item" href="user/">
+          <i class="fa fa-bowl-food"></i>
+          <h3>登記循環杯歸還</h3>
+        </a>
+        <a class="manage__item" href="store/">
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          <h3>分配循環杯至店家</h3>
+        </a>
+        <a class="manage__item" href="history/">
+          <i class="fa fa-history" aria-hidden="true"></i>
+          <h3>查看店家借用情形</h3>
+        </a>
+        <a class="manage__item" href="https://loopick.com.tw/contact/" target="_blank">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <h3>與循拾客服聯絡</h3>
+        </a>
+      </div>
+      <h3 class="remind">
+        <% if (errorMessage[0]) { %>
+            <%= errorMessage %>
+        <% } %>
+      </h3>
+    </div>
+    <%- include ('templates/footer') %>
+  </body>
+</html>

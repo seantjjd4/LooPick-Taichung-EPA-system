@@ -1,0 +1,242 @@
+[
+	{
+		"storeName": "十二韻臺中興安店",
+		"storeAddress": "臺中市北屯區興安路一段318號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中松竹店",
+		"storeAddress": "臺中市北屯區松竹路二段99號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中東山店",
+		"storeAddress": "臺中市北屯區東山路一段246-2號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中昌平店",
+		"storeAddress": "臺中市北屯區昌平路一段220號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中水湳店",
+		"storeAddress": "臺中市北屯區大鵬路16-3號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "瑪利MAMA手作麵包-",
+		"storeAddress": "臺中市西屯區台灣大道三段99號惠中樓1樓",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "布萊恩紅茶臺中西屯店",
+		"storeAddress": "臺中市西屯區西屯路三段164-8號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中逢甲店",
+		"storeAddress": "臺中市西屯區文華路1-6號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中中科店",
+		"storeAddress": "臺中市西屯區西屯路三段166-8號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中朝富店",
+		"storeAddress": "臺中市西屯區朝富路136號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中嶺東店",
+		"storeAddress": "臺中市南屯區忠勇路52-283號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中向心南店",
+		"storeAddress": "臺中市南屯區向心南路988號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "不要對我尖叫台中勤美店",
+		"storeAddress": "臺中市西區中興街239號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "布萊恩紅茶台中勤美店",
+		"storeAddress": "臺中市西區美村路一段145號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "三時杏仁-",
+		"storeAddress": "臺中市西區民生路356號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "華山藏窖人文茶飲台中中華店",
+		"storeAddress": "臺中市西區中華路一段1號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中精誠店",
+		"storeAddress": "臺中市西區精誠路142號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中林森店",
+		"storeAddress": "臺中市西區林森路218號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中樂業店",
+		"storeAddress": "臺中市東區樂業路207號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻興大學府店",
+		"storeAddress": "臺中市南區學府路18號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻臺中永興店",
+		"storeAddress": "臺中市北區永興街108號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "華山藏窖人文茶飲台中大里店",
+		"storeAddress": "臺中市大里區成功二路28號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻大里大明店",
+		"storeAddress": "臺中市大里區大明路195號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻大里成功店",
+		"storeAddress": "臺中市大里區成功二路20號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻太平中山店",
+		"storeAddress": "臺中市太平區中山路四段157號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻太平長億店",
+		"storeAddress": "臺中市太平區長億六街53-1號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻太平樹孝店",
+		"storeAddress": "臺中市太平區樹孝路26號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻大雅清泉店",
+		"storeAddress": "臺中市大雅區中清路四段867號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻大雅學府店",
+		"storeAddress": "臺中市大雅區學府路339號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻后里甲后店",
+		"storeAddress": "臺中市后里區甲后路421號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻豐原南陽店",
+		"storeAddress": "臺中市豐原區南陽路285號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻豐原三民店",
+		"storeAddress": "臺中市豐原區三民路100號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻潭子中山店",
+		"storeAddress": "臺中市潭子區中山路二段452號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻潭子勝利店",
+		"storeAddress": "臺中市潭子區勝利路315號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻大甲蔣公店",
+		"storeAddress": "臺中市大甲區蔣公路49號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻梧棲文化店",
+		"storeAddress": "臺中市梧棲區文化路二段180號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "華山藏窖人文茶飲沙鹿靜宜店",
+		"storeAddress": "臺中市沙鹿區北勢東路526號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻沙鹿中山店",
+		"storeAddress": "臺中市沙鹿區中山路440號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "十二韻龍井中央店",
+		"storeAddress": "臺中市龍井區龍津里中央路一段250號",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	},
+	{
+		"storeName": "大慶夜市-",
+		"storeAddress": "臺中市南區建國南路一段208號(循環杯借用歸還處-大慶夜市管委會前)",
+		"createdAt": "2022-09-23T05:19:43.298Z",
+		"updatedAt": "2022-09-23T05:19:43.298Z"
+	}
+]

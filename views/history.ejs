@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include ('templates/head') %>
+  </head>
+
+  <body>
+    <%- include ('templates/nav') %>
+    <div class="manage">
+      <!-- <h1>管理後台</h1> -->
+      
+      <!-- <p class="explain">歡迎使用管理介面~</p> -->
+      <h1>店家借用情形</h1>
+      <div class="manage__title"> 
+          <div class="content">
+            <table class="center" style="border:1px #000000 solid;width:60%" cellpadding="1" border='1'>
+              <tr>
+                <td>編號</td>
+                <td>店家名稱</td>
+                <td>累計杯數</td>
+                <td>店面杯數</td>
+                <td>外借中</td>
+                <td>詳細分配明細</td>
+              </tr>
+              <% for(var i = 0; i < storeList.length; i++) { %>
+                <tr>
+                  <td><%= storeIdList[i] %></td>
+                  <td><%= storeList[i] %></td>
+                  <td><%= historyCupList[i] %></td>
+                  <td><%= storeCupNumList[i] %></td>
+                  <td><%= storeCupreturnNumList[i] %></td>
+                  <td><a class = "none" href="/storeDetail/<%= storeIdList[i] %>">查看</a></td>
+                </tr>
+              <% } %>
+              </table>
+          </div>
+          <br>
+      </div>
+      <h3 class="remind">
+        <% if (errorMessage[0]) { %>
+            <%= errorMessage %>
+        <% } %>
+      </h3>
+    </div>
+    <%- include ('templates/footer') %>
+  </body>
+</html>

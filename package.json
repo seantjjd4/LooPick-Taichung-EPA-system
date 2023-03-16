@@ -1,0 +1,47 @@
+{
+  "name": "loopick_epa_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "npx nodemon app.js -w server",
+    "test": "nyc mocha --timeout 15000 --exit",
+    "migrate": "npx sequelize db:migrate",
+    "createDb": "npx sequelize-cli db:create",
+    "dropDb": "npx sequelize-cli db:drop",
+    "seed": "npx sequelize-cli db:seed:all",
+    "seedUndo": "npx sequelize-cli db:seed:undo",
+    "reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize db:migrate && npx sequelize-cli db:seed:all",
+    "init": "npx sequelize-cli db:create && npx sequelize db:migrate && npx sequelize-cli db:seed:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@line/bot-sdk": "^7.5.2",
+    "axios": "^1.1.0",
+    "bcrypt": "^5.0.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-rate-limit": "^6.6.0",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "redis": "^4.3.0",
+    "request": "^2.88.2",
+    "sequelize": "^6.21.4",
+    "sequelize-cli": "^6.2.0",
+    "thenify": "^3.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "nyc": "^15.1.0"
+  }
+}

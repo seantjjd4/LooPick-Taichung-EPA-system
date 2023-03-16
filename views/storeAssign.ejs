@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include ('templates/head') %>
+  </head>
+  <script>
+    function del() {
+      var msg = "您真的確定要分配嗎？\n\n按確認後即分配！";
+      if ( confirm(msg)==true )
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+      }
+  </script>
+  <body>
+    <%- include ('templates/nav') %>
+    <!-- <div class="manage__title ">
+      <form class="manage__edit" action="/storeObjectAdd" method="POST">
+        <div class="user__item">
+          <h2>請掃描或輸入循環杯編號（可連續掃描）</h2>
+          <input placeholder="請點擊此欄位開始掃描 （手動輸入完需按 ENTER 鍵）" type="text" name="tempId"/>
+        </div>
+        <input type="submit" value="掃描正確" hidden>
+        <h3 class="remind">
+          <% if (errorMessage[0]) { %>
+              <%= errorMessage %>
+          <% } %>
+        </h3>
+      </form>
+    </div>
+    <div class="manage__title">
+      <a href="/store">重新選擇店家</a>
+      <a href="/storeAssignConfirm" onclick="javascript:return del()">點擊送出分配</a>
+    </div> -->
+    <div class="manage">
+      <h1>分配循環杯至店家</h1>
+      <div class="manage__title">
+          <h2>店家名 <%= storeName %></h2>
+          <form class="manage__edit" action="/storeObjectAdd" method="POST">
+            <div class="user__item">
+              <h2>請掃描或輸入循環杯編號（可連續掃描）</h2>
+              <input placeholder="請點擊此欄位開始掃描 （手動輸入完需按 ENTER 鍵）" type="text" name="tempId"/>
+            </div>
+            <h3 class="remind">
+              <% if (errorMessage[0]) { %>
+                  <%= errorMessage %>
+              <% } %>
+            </h3>
+          </form>
+          <div class="manage__title">
+            <a href="/store">重新選擇店家</a>
+            <a href="/storeObjectClear">取消所有分配</a>
+            <a href="/storeAssignConfirm" onclick="javascript:return del()">點擊送出分配</a>
+          </div>
+          <br>
+          <h3>目前掃描的編號</h3>
+          <% for(var i = 0; i < tempList.length; i++) { %>
+            <p><%= tempList[i] %></p>
+          <% } %>
+      </div>
+    </div>
+    <%- include ('templates/footer') %>
+  </body>
+</html>

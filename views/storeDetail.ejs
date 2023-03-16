@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include ('templates/head') %>
+  </head>
+
+  <body>
+    <%- include ('templates/nav') %>
+    <div class="manage">
+      <!-- <h1>管理後台</h1> -->
+      
+      <!-- <p class="explain">歡迎使用管理介面~</p> -->
+      <h1><%= storeName %> 詳細分配明細</h1>
+      <div class="manage__title"> 
+          <div class="content">
+            <table class="center" style="border:1px #000000 solid;width:60%" cellpadding="1" border='1'>
+              <tr>
+                <td>編號</td>
+              </tr>
+              <% for(var i = 0; i < loanableList.length; i++) { %>
+                <tr>
+                  <td><%= loanableList[i] %></td>
+                </tr>
+              <% } %>
+              </table>
+          </div>
+          <br>
+      </div>
+      <div class="manage__title">
+        <a href="/history">返回</a>
+      </div>
+      <h3 class="remind">
+        <% if (errorMessage[0]) { %>
+            <%= errorMessage %>
+        <% } %>
+      </h3>
+    </div>
+    <%- include ('templates/footer') %>
+  </body>
+</html>

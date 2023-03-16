@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include ('templates/head') %>
+  </head>
+  
+  <body>
+    <%- include ('templates/nav') %>
+    <div class="manage">
+      <!-- <h1>管理後台</h1> -->
+      
+      <!-- <p class="explain">歡迎使用管理介面~</p> -->
+      
+      <div class="manage">
+
+        <h1>登記循環杯歸還</h1>
+  
+        <form method="get" class="manage__edit" action="/home">
+          <div class="content">
+            <h2>已歸還 <%= returnTotal %> 杯</h2> 
+            <h3>備註：<%= returnMessage %></h3>       
+            <br> 
+            <h2>無誤請返回首頁，有誤請通知循拾</h2>      
+            <div class="post__btn">
+              <button type="submit" class="edit-post__btn">返回首頁</a>
+            </div>  
+        </form>
+        <div class="remind">
+          <% if (errorMessage[0]) { %> <%= errorMessage %> <% } %>
+        </div>
+        <br>
+        <br>
+        <h2>以下為本次歸還的編號</h2>       
+        <br>
+        <% if (tempList[0]) { %> 
+          <% for(var i = 0; i < tempList.length; i++) { %>
+            <h3><%= tempList[i] %></h3>
+          <% } %>
+          <% } %>
+        <!-- <iframe name="main" src="" id="main" frameborder="0" width="100%" height="1000px" scrolling="auto"></iframe>
+         -->
+      </div>
+      <br>
+      <div class="manage__title">
+        <a href="/user/cancel">繼續歸還</a>
+      </div>
+    <%- include ('templates/footer') %>
+  </body>
+</html>

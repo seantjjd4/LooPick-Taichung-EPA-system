@@ -1,0 +1,119 @@
+upstream web1 {
+        server chat:9000;
+}
+
+upstream web2 {
+        server scan:9001;
+}
+upstream web3 {
+        server phpmyadmin:9002;
+}
+
+server {
+        listen 443 ssl;
+        server_name loopick.app;
+        ssl_certificate /etc/ssl/key/fullchain.crt;
+        ssl_certificate_key  /etc/ssl/key/private.pem;
+        ssl_session_timeout 5m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
+        ssl_prefer_server_ciphers on;
+
+
+        location ~ ^/chatbot(.+)$ {
+                # allow 140.118.122.157;
+                # deny all;
+                # if ($2 = false){
+                #         proxy_pass http://web1/;
+                # }else{
+                #         proxy_pass http://web1$2;
+                # }
+                proxy_pass http://web1$1;
+                proxy_set_header Accept-Encoding "";
+                sub_filter '"/' '"/chatbot/'; 
+                sub_filter_once off; 
+        }
+
+        # location /taichungicup {
+        #         # allow 140.118.122.157;
+        #         # deny all;
+
+        #         proxy_pass http://web2/;
+        #         proxy_set_header Accept-Encoding "";
+        #         sub_filter '"/' '"/taichungicup/'; 
+        #         sub_filter_once off; 
+        # }
+        # location ~ ^/taichungicup(.+)$ {
+        #         # allow 140.118.122.157;
+        #         # deny all;
+        #         # set $test $1
+        #         # set $is_matched 0;
+        #         # if($1 = ""){
+        #         #         proxy_pass http://web2/
+        #         #         # proxy_set_header Accept-Encoding "";
+        #         #         # sub_filter '"/' '"/taichungicup/'; 
+        #         #         # sub_filter_once off;
+        #         #         set $is_matched 1;
+        #         # }
+                
+        #         # if ($is_matched  = 0){
+                        
+        #         #         # proxy_set_header Accept-Encoding "";
+        #         #         # sub_filter '"/' '"/taichungicup/'; 
+        #         #         # sub_filter_once off; 
+        #         # }
+        #         proxy_pass http://web2$1;
+        #         proxy_set_header Accept-Encoding "";
+        #         sub_filter '"/' '"/taichungicup/'; 
+        #         sub_filter_once off; 
+        # }
+
+        location / {
+                # allow 140.118.122.157;
+                # deny all;
+                # set $test $1
+                # set $is_matched 0;
+                # if($1 = ""){
+                #         proxy_pass http://web2/
+                #         # proxy_set_header Accept-Encoding "";
+                #         # sub_filter '"/' '"/taichungicup/'; 
+                #         # sub_filter_once off;
+                #         set $is_matched 1;
+                # }
+                
+                # if ($is_matched  = 0){
+                        
+                #         # proxy_set_header Accept-Encoding "";
+                #         # sub_filter '"/' '"/taichungicup/'; 
+                #         # sub_filter_once off; 
+                # }
+                proxy_pass http://web2/;
+                # proxy_set_header Accept-Encoding "";
+                # sub_filter '"/' '"/taichungicup/'; 
+                # sub_filter_once off; 
+        }
+
+        location /icuppage {
+                # allow 140.118.122.157;
+                # deny all;
+                proxy_pass https://docs.google.com/forms/d/e/1FAIpQLSe1MNwb7SDNhmygOyjDV_WVEWCB9Eplau6gNnLZeQw3avYmsg/viewform;
+        }
+        
+        location ~ ^/myadmin(.+)(\.php)$ {
+                # allow 140.118.122.241;
+                # deny all;
+                proxy_pass http://web3$1;
+                proxy_set_header Accept-Encoding "";
+                sub_filter '"/' '"/myadmin/'; 
+                sub_filter_once off; 
+        }
+
+
+
+}
+server {
+    listen 80;
+    listen [::]:80;
+    server_name loopick.app;
+    return 301 https://$host$request_uri;
+}

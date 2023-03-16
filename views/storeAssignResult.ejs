@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include ('templates/head') %>
+  </head>
+
+  <body>
+    <%- include ('templates/nav') %>
+    <div class="manage">
+
+      <h1>分配循環杯至店家</h1>
+
+      <form method="get" class="manage__edit" action="/home">
+        <div class="content">
+          <h2>已分配 <%= tempList.length %> 杯</h2>       
+          <h2>無誤請返回首頁，有誤請通知循拾</h2>    
+          <div class="post__btn">
+            <button type="submit" class="edit-post__btn">返回首頁</a>
+          </div>    
+      </form>
+      <br>
+      <br>
+      <h2>以下為本次分配的編號</h2>       
+      <br>
+      <% if (tempList[0]) { %> 
+        <% for(var i = 0; i < tempList.length; i++) { %>
+          <h3><%= tempList[i] %></h3>
+        <% } %>
+        <% } %>
+      <br>
+      <div class="manage__title">
+        <a href="/store">繼續分配</a>
+      </div>
+    </div>
+    <%- include ('templates/footer') %>
+  </body>
+</html>
